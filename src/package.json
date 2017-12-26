@@ -1,33 +1,39 @@
 {
-    "name": "angular-validation-message",
+    "name": "angular-validation-message-i18next",
     "version": "0.1.0",
-    "homepage": "https://github.com/Romanchuk/angular-validation-message#readme",
+    "homepage": "https://github.com/Romanchuk/angular-validation-message-i18next#readme",
     "author": {
         "name": "Sergey Romanchuk"
     },
     "license": "MIT",
-    "description": "angular directive that inserts validation message right after your validating control",
+    "description": "angular-validation-message plugin to localize @angular/forms validation messages (using i18next framework)",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Romanchuk/angular-validation-message.git"
+        "url": "git+https://github.com/Romanchuk/angular-validation-message-i18next.git"
     },
     "keywords": [
         "forms",
         "validation",
-        "angular"
+        "angular",
+        "i18next",
+        "i18n",
+        "l10n",
+        "internationalization"
     ],
     "bugs": {
-        "url": "https://github.com/Romanchuk/angular-validation-message/issues"
+        "url": "https://github.com/Romanchuk/angular-validation-message-i18next/issues"
     },
     "maintainers": [{
         "email": "rezety@gmail.com",
         "name": "Sergey Romanchuk"
     }],
-    "module": "angular-validation-message.es5.js",
-    "es2015": "angular-validation-message.js",
-    "typings": "angular-validation-message.d.ts",
+    "module": "angular-validation-message-i18next.es5.js",
+    "es2015": "angular-validation-message-i18next.js",
+    "typings": "angular-validation-message-i18next.d.ts",
     "peerDependencies": {
         "@angular/core": ">=4.0.0 <6.0.0",
-        "@angular/forms": ">=4.0.0 <6.0.0"
+        "@angular/forms": ">=4.0.0 <6.0.0",
+        "angular-i18next": "^3.1.0",
+        "angular-validation-message": "^0.1.0"
     }
 }

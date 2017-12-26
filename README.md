@@ -1,2 +1,2 @@
 # angular-validation-message-i18next
-Angular 2+ i18next validation message
+angular-validation-message with i18next integration

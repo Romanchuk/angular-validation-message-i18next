@@ -21,7 +21,7 @@
         "annotateForClosureCompiler": true,
         "strictMetadataEmit": true,
         "skipTemplateCodegen": true,
-        "flatModuleOutFile": "angular-validation-message.js",
-        "flatModuleId": "angular-validation-message"
+        "flatModuleOutFile": "angular-validation-message-i18next.js",
+        "flatModuleId": "angular-validation-message-i18next"
     }
 }

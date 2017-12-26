@@ -1,13 +1,13 @@
 {
-    "name": "angular-validation-message",
+    "name": "angular-validation-message-i18next",
     "version": "0.1.0",
     "author": {
         "name": "Sergey Romanchuk"
     },
-    "homepage": "https://github.com/Romanchuk/angular-validation-message#readme",
+    "homepage": "https://github.com/Romanchuk/angular-validation-message-i18next#readme",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Romanchuk/angular-validation-message.git"
+        "url": "git+https://github.com/Romanchuk/angular-validation-message-i18next.git"
     },
     "license": "MIT",
     "description": "angular directive that inserts validation message right after your validating control",
@@ -22,22 +22,29 @@
         "rollup": "rollup",
         "prebuild": "npm run clean",
         "compile": "npm run compile:es2015 && npm run compile:es5",
-        "compile:es2015": "npm run ngc -- -p src/tsconfig-es2015.json && npm run rollup -- build/angular-validation-message.js -o dist/angular-validation-message.js -f es",
-        "compile:es5": "npm run ngc -- -p src/tsconfig-es5.json && npm run rollup -- build/angular-validation-message.js -o dist/angular-validation-message.es5.js -f es",
+        "compile:es2015": "npm run ngc -- -p src/tsconfig-es2015.json && npm run rollup -- build/angular-validation-message-i18next.js -o dist/angular-validation-message-i18next.js -f es",
+        "compile:es5": "npm run ngc -- -p src/tsconfig-es5.json && npm run rollup -- build/angular-validation-message-i18next.js -o dist/angular-validation-message-i18next.es5.js -f es",
         "copy:assets": "npm run cpy -- \"**/*.*\" \"!**/*.js\" \"../dist\" --parents --cwd=build && npm run cpy -- src/package.json dist && npm run cpy -- README.md dist && npm run cpy -- CHANGELOG.md dist",
+        "conventional-changelog": "conventional-changelog",
+        "changelog": "npm run conventional-changelog -- -p angular -i CHANGELOG.md -s",
         "clean": "rimraf dist/",
         "clean:tests": "npm run rimraf -- coverage && npm run rimraf -- \"tests/**/*.+(js|js.map|d.ts|metadata.json)\" ",
+        "clean:compile": "npm run rimraf -- dist build",
         "lint": "npm run lint-ts && npm run lint-js && npm run lint-css",
         "lint-css": "stylelint './src/**/*.css'",
         "lint-ts": "tslint './src/**/*.ts'",
         "lint-js": "eslint '**/*.js' --ignore-path .gitignore",
+        "preversion": "npm run clean:compile && npm run compile && npm run copy:assets",
+        "version": "npm run changelog && git add CHANGELOG.md",
+        "postversion": "git push && git push --tags && npx conventional-github-releaser -p angular",
         "test": "npm run clean:tests && karma start karma.conf.js",
         "test:watch": "npm run clean:tests && karma start karma.conf.debug.js"
     },
     "dependencies": {
         "@angular/core": ">=4.0.0 <6.0.0",
         "@angular/forms": ">=4.0.0 <6.0.0",
-        "angular-i18next": "^3.1.0"
+        "angular-i18next": "^3.1.0",
+        "angular-validation-message": "^0.1.0"
     },
     "devDependencies": {
         "@angular/compiler": ">=4.0.0 <6.0.0",

@@ -23,10 +23,12 @@
     "bugs": {
         "url": "https://github.com/Romanchuk/angular-validation-message-i18next/issues"
     },
-    "maintainers": [{
-        "email": "rezety@gmail.com",
-        "name": "Sergey Romanchuk"
-    }],
+    "maintainers": [
+        {
+            "email": "rezety@gmail.com",
+            "name": "Sergey Romanchuk"
+        }
+    ],
     "module": "angular-validation-message-i18next.es5.js",
     "es2015": "angular-validation-message-i18next.js",
     "typings": "angular-validation-message-i18next.d.ts",

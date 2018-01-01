@@ -1,6 +1,6 @@
 {
     "name": "angular-validation-message-i18next",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "homepage": "https://github.com/Romanchuk/angular-validation-message-i18next#readme",
     "author": {
         "name": "Sergey Romanchuk"
@@ -23,12 +23,10 @@
     "bugs": {
         "url": "https://github.com/Romanchuk/angular-validation-message-i18next/issues"
     },
-    "maintainers": [
-        {
-            "email": "rezety@gmail.com",
-            "name": "Sergey Romanchuk"
-        }
-    ],
+    "maintainers": [{
+        "email": "rezety@gmail.com",
+        "name": "Sergey Romanchuk"
+    }],
     "module": "angular-validation-message-i18next.es5.js",
     "es2015": "angular-validation-message-i18next.js",
     "typings": "angular-validation-message-i18next.d.ts",

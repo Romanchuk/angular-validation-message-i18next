@@ -1,6 +1,6 @@
 {
     "name": "angular-validation-message-i18next",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "author": {
         "name": "Sergey Romanchuk"
     },
@@ -10,7 +10,7 @@
         "url": "git+https://github.com/Romanchuk/angular-validation-message-i18next.git"
     },
     "license": "MIT",
-    "description": "angular directive that inserts validation message right after your validating control",
+    "description": "angular-validation-message plugin i18next",
     "engines": {
         "node": "4.4.4"
     },

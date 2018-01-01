@@ -1,10 +1,9 @@
-
-import { NgModule, ModuleWithProviders, Type } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { I18NextModule } from 'angular-i18next';
-
-import { ValidationMessageModule, ValidationMessageComponent } from 'angular-validation-message';
+import { ValidationMessageComponent, ValidationMessageModule } from 'angular-validation-message';
 
 import { I18NextValidationMessageComponent } from './components/I18NextValidationMessageComponent';
+
 
 
 export const declarations = [

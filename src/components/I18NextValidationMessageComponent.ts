@@ -1,8 +1,7 @@
-import { Component, ViewEncapsulation, Optional, Inject } from '@angular/core';
-import { NgControl, FormControlName, NgForm, FormGroupName, ControlContainer, AbstractControlDirective } from '@angular/forms';
-
+import { Component, Inject, Optional, ViewEncapsulation } from '@angular/core';
+import { FormControlName, FormGroupName } from '@angular/forms';
 import { I18NEXT_NAMESPACE } from 'angular-i18next';
-import { ValidationMessageComponent, ValidationMessage } from 'angular-validation-message';
+import { ValidationMessageComponent } from 'angular-validation-message';
 
 @Component({
     selector: 'i18next-validation-message',
@@ -13,6 +12,7 @@ import { ValidationMessageComponent, ValidationMessage } from 'angular-validatio
       i18next-validation-message {
         display: none;
         width: 100%;
+        position: relative;
       }
       i18next-validation-message.standalone,
       .ng-dirty.ng-invalid + i18next-validation-message {

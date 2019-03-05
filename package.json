@@ -43,10 +43,10 @@
         "release": "npx np --contents=dist --yolo"
     },
     "peerDependencies": {
-        "@angular/core": ">=7.2.6 <8.0.0",
-        "@angular/forms": ">=7.2.6 <8.0.0",
-        "angular-i18next": ">=6.0.0 <7.0.0",
-        "angular-validation-message": ">=1.1.0 <2.0.0"
+        "@angular/core": ">=6.0.0 <8.0.0",
+        "@angular/forms": ">=6.0.0 <8.0.0",
+        "angular-i18next": ">=4.0.0 <7.0.0",
+        "angular-validation-message": ">=1.0.0 <2.0.0"
     },
     "devDependencies": {
         "@angular/compiler": "^7.2.6",

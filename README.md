@@ -1,2 +1,3 @@
 # angular-validation-message-i18next
-angular-validation-message with i18next integration
+
+Deprecated: i18next provider moved to [angular-validation-message repository](https://github.com/Romanchuk/angular-validation-message)
